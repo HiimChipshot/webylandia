@@ -43,3 +43,35 @@ gulp.task('css', function () {
 gulp.task('default',function() {
     gulp.watch('./assets/stylesheets/*.scss',['sass']);
 });
+
+
+
+Ref: http://thesassway.com/beginner/how-to-structure-a-sass-project
+Ref: https://www.sitepoint.com/5-useful-sass-mixins-bootstrap/
+stylesheets/
+|
+|-- base/
+|   |-- _utility.scss
+|   |-- _base.scss           # imports for all mixins + global project variables
+|   ...
+|
+|-- Partials/
+|   |-- _forms.scss
+|   |-- _buttons.scss
+|   |-- _card.scss
+|   |-- _figures.scss
+|   |-- _grids.scss
+|   |-- _typography.scss
+|   ...
+|
+|-- Modules/
+|   |-- _header.scss
+|   |-- _sidebar.scss
+|   |-- _footer.scss
+|   ...
+|
+|-- page/
+|-- |-- about-us.scss
+|-- |-- contact-us.scss
+|-- ...
+|-- style.scss              # primary Sass file
