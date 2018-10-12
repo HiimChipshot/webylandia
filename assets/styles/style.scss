@@ -1,12 +1,14 @@
+// Override
+@import 'base/var';
 
-@import 'node_modules/bootstrap/scss/bootstrap';
 
-body {
-  background-color: $black;
-  color: $white;
-  font-size: 16px;
-  h1 {
-    font-size: 1.4rem;
-    color: $white;
-  }
-}
+
+
+// Vendor
+@import 'vendor/bootstrap/scss/bootstrap-grid.scss';
+@import 'vendor/bootstrap/scss/mixins';
+
+
+// Base
+@import 'base/base';
+@import 'base/typography';
